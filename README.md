@@ -16,13 +16,16 @@
 # 2- criar container da aplicação com base na imagem docker criada no passo 1
 # e executar o container
     docker run -p 8080:8080 id_imagem_Docker(IMAGE ID gerado)
-# 3- É possivel acessar a aplicação no PATH: http://localhost:8080/swagger-ui.html
+    
+    OBS: -p 8080:8080 é a definição das portas onde a aplicação vai rodar
+    
+# 3- É possivel acessar a aplicação no PATH: /swagger-ui.html
 
-# 4- A documentação da API, esta disponivel no seguinte PATH da aplicação: http://localhost:8080/swagger-ui.html
+# 4- A documentação da API, esta disponivel no seguinte PATH da aplicação: /swagger-ui.html
 # a documentação foi desenvolvida inteira com o SWAGGER, nela esta o manual de como usar a API e fazer as requisições 
 
 # 5- BANCO DE DADOS: o banco de dados utilizado foi o H2 DATABSE, um banco de dados relacional  
-# em memória(parou a aplicação apaga os dados)que pode ser acessado pelo BROWSER através do PATH: http://localhost:8080/h2-console
+# em memória(parou a aplicação apaga os dados)que pode ser acessado pelo BROWSER através do PATH: /h2-console
     JDBC URL: jdbc:h2:mem:testdb
     User Name: sa
     Password : password
